@@ -32,6 +32,8 @@ class CarController extends Controller
      */
     
     public function show(){
+        $cars = Car::all();
         
+        return view('index', ['cars' => $cars]);
     }
 }

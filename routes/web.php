@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [
+    'uses' => 'CarController@show',
+    'as' => 'cars.show'
+]);
+
 Route::post('/create', [
     'uses' => 'CarController@create',
     'as' => 'cars.create'

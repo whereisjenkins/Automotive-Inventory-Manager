@@ -48,11 +48,13 @@
                         <th>Model</th>
                         <th>Produced on</th>
                     </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                    @foreach($cars as $car)
+                        <tr>
+                            <td>{{ $car->make }}</td>
+                            <td>{{ $car->model }}</td>
+                            <td>{{ $car->produced_on }}</td>
+                        </tr>
+                    @endforeach
                 </table>
             </div>
         </div>
