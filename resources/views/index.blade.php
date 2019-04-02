@@ -14,7 +14,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6">
-                <form action="" method="post">
+                <form action="{{ route('cars.create') }}" method="post">
+                    @csrf
                     <div class="row form-group">
                         <div class="col-md-12">
                             <label for="">Make : </label>
