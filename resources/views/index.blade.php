@@ -12,6 +12,19 @@
 </head>
 <body>
     <div class="container-fluid">
+        <div class="jumbotron jumbotron-fluid bg-danger p-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="display-1 text-white">Cars</h1>
+                        <p class="lead">A simple application for adding cars to a list</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/mx_tw.jpg" alt="Tesla">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-6">
                 <form action="{{ route('cars.create') }}" method="post">
